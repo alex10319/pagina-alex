@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alex Roldán Web Developer</title>
+	<link rel="icon" href="img/encabezado4.png" class="encabezado">
+
+	<link rel="stylesheet" type="text/css" href="css.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Homemade+Apple&family=Inspiration&family=Sacramento&family=Tangerine&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+	<span class="nav_bar" id="btnMenu"><i class="fa-solid fa-chart-bar"></i>Menu</span>
+
+	<nav id="navbar">
+		<div id="logo" class="nav_li"><img src="img/encabezado4.png"></div>
+		
+		<ul class="nav_ul">
+			<li class="nav_li"><a href="#">Inicio</a></li>
+			<li class="nav_li"><a href="#acercademisec">Acerca de mi</a></li>
+			<li class="nav_li"><a href="#portafolio">Portafolio</a></li>
+			<li class="nav_li"><a href="#contactamesec">Contáctame</a></li>
+		</ul>
+		
+		
+		
+		<ul class="nav_responsive-ul" id="menu">
+			<li class="nav_responsive-li"><a href="#">Inicio</a></li>
+			<li class="nav_responsive-li"><a href="#acercademisec">Acerca de mi</a></li>
+			<li class="nav_responsive-li"><a href="#portafolio">Portafolio</a></li>
+			<li class="nav_responsive-li"><a href="#contactamesec">Contactame</a></li>
+			<li class="nav_responsive-li" id="none"><a href="#"></a></li>
+		</ul>
+	</nav>
+
+
+	<section id="fondo">
+		<div id="cont-fondo">
+			<div class="imagen-fondo"></div>
+			<div class="textotitulo">
+				<h1 id="texttit">Programación web Bs.As</h1>
+			</div>
+			<div class="subtitulo">
+				<h2 id="subtitullo"><span class="typed">&#160;</span></h2>
+			</div>
+			
+		</div>
+	</section>
+	<section id="acercademisec">
+
+		<div class="contenedor-acercademi">
+				<img src="img/yo2.jpg" class="fotoyo">
+		</div>
+		<div class="contenedor-acercademi">
+		
+				<p class="text-acerc">
+				¡Hola!. Mi nombre es <b>Alex Roldán</b>, soy estudiante de la carrera de Ingenieria en informática de la <b>UNLaM</b> (Universidad Nacional de la Matanza), <b>Freelance</b> y <b>Desarrollador Web</b>.<br>
+					Me enfoco en trabajar con los lenguajes de programación: <b>Html, Css, JavaScript, MySQL y Php.</b><br>
+				Mantengo una excelente forma de comunicación con los clientes para desarrollar a su gusto cada rincón de su página web.
+					<br><b>Contáctame</b> si tienes una propuesta :), mi cordial saludo.
+				</p>
+		</div>
+		
+		
+	</section>
+	<section id="portafolio">
+		<div class="portafolio_texto-container">
+			<img src="img/404.jpg" class="notfound">
+			<p class="portafolio_texto">¿Qué sucedió?, no hay nada.. Y si empezamos por <b>vos</b>?</p>
+			
+		</div>
+	</section>
+
+	<section id="contactamesec">
+		<form class="form" action="https://formspree.io/f/xoqrndpv"
+  method="POST">
+			<div class="form_container">
+				<h2 class="form_tittle">Contáctame</h2>
+				<input required type="text" name="Nombre" class="form_input" placeholder="Nombre:">
+				<input  required type="email" name="Email" class="form_input" placeholder="Ingrese su correo:">
+				<textarea required name="message" class="form_input form_input--message" placeholder="Indique a detalle su consulta o mensaje:"></textarea>
+				<input type="submit" name="" class="form_cta">
+			</div>
+		</form>
+	</section>
+
+
+
+
+	<!-- PROPIEDADES IMPORTANTES PARA JAVASCRIPT -->
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script type="text/javascript" src="js.js"></script>
+
+
+</body>
+</html>
