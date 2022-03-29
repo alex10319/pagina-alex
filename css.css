@@ -69,8 +69,7 @@ div#cont-fondo{
 	background-repeat: no-repeat;
 	background-position: bottom center; /*alinea la parte de abajo y en el centro*/
 	background-size: cover;
-	filter: contrast(-1);
-	opacity: .93;
+	filter: contrast(75%);
 }
 
 .textotitulo{
@@ -155,7 +154,7 @@ section#acercademisec{
 	background: #000;
 	min-width: 300px;
 	min-height: 300px;
-	filter: contrast(1.4) grayscale(50%);
+	filter: contrast(1.2);
 	margin: auto;
 }
 
