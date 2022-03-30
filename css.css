@@ -9,6 +9,7 @@ html, body{
 	width: 100%;
 	height: 100%;
 	scroll-behavior: smooth;
+	background: #ccc;
 }
 nav{
 	position: fixed;
@@ -69,7 +70,8 @@ div#cont-fondo{
 	background-repeat: no-repeat;
 	background-position: bottom center; /*alinea la parte de abajo y en el centro*/
 	background-size: cover;
-	filter: contrast(75%);
+	filter: contrast(1.5);
+	filter: grayscale(.4);
 }
 
 .textotitulo{
@@ -122,17 +124,30 @@ nav.abajo{
 
 section#acercademisec{
 	width: 100%;
+	height: 100%;
+	transform: translateY(10px);
+	background: url(img/fondo.jpg);
+	object-fit: inherit;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	
+	filter: contrast(1.2);
+	filter: grayscale(.5);
+	padding-top: 10%;
+}
+.contt{
+	width: 100%;
 	height: 70%;
-	background: #eee;
+	background: #0009;
 	display: flex;
 	place-items: center;
 	justify-content: center;
-	margin-top: 80px;
 }
 .contenedor-acercademi{
 	justify-content: space-around;
 	width: 400px;
 	height: 250px;
+
 }
 
 .contenedor-acercademi:first-child{
@@ -146,6 +161,7 @@ section#acercademisec{
 	font-size: 16px;
 	font-family: 'Work Sans';
 	letter-spacing: 1px;
+	color: #fff;
 	margin: auto;
 	padding: 10px;
 }
@@ -154,41 +170,56 @@ section#acercademisec{
 	background: #000;
 	min-width: 300px;
 	min-height: 300px;
-	filter: contrast(1.2);
+	filter: contrast(1.4);
 	margin: auto;
+	transition: all 1.2s;
+	transform: translateY(-10px);
 }
+
+
 
 section#portafolio{
 	width: 100%;
-	height: 100%;
-	background: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+	height: 95%;
+	transform: translateY(20px);
+	background: url(img/fondo.jpg);
+	object-fit: cover;
+	background-repeat: no-repeat;
+
+	filter: contrast(1);
+	filter: grayscale(.7);
+	padding-top: 10%;
 }
 
 .portafolio_texto-container{
+		display: inline-block;
+		justify-items: center;
 	width: 100%;
 	background: #eee;
+	background: #0009;
 	font-weight: 500;
-	display: flex;
+
 	height: 70%;
+}
+.portafolio-container{
+	
+	display: flex;
+	padding-top: 5px;
 }
 .portafolio_texto{
 	margin: auto;
 	letter-spacing: 5px;
 	font-size: 22px;
-	color: #000;
-	filter: drop-shadow(2px 2px #fff);
-	transform: translateY(50px);
+	color: #fff;
+	filter: drop-shadow(2px 2px #000);
 }
 .notfound{
-	display: flex;
-	position: absolute;
 	width: 500px;
 	height: 250px;
-	left: 30%;
+	filter: contrast(1.2);
+	border-radius: 5px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
@@ -208,6 +239,13 @@ section#contactamesec{
 }
 section#contactamesec{
 	display: flex;
+	margin-top: 30px;
+	background: url(img/fondogmail.png);
+	filter: contrast(1.2);
+	filter: grayscale(.5);
+	background-repeat: no-repeat;
+
+	object-fit: cover;
 }
 
 .form{
@@ -274,11 +312,6 @@ section#contactamesec{
 }
 
 /*ESTO ES PARA EL NOT FOUND*/
-@media only screen and (min-width: 0) and (max-width: 1000px){
-	.notfound{
-		transform: translateX(-60px);
-	}
-}
 @media only screen and (min-width: 0) and (max-width: 871px){
 	.notfound{
 		width: 400px;
@@ -286,19 +319,8 @@ section#contactamesec{
 	}
 }
 
-@media only screen and (min-width: 0) and (max-width: 590px){
-	.notfound{
-		transform: translateX(-90px);
-	}
-}
-@media only screen and (min-width: 0) and (max-width: 510px){
-	.notfound{
-		transform: translateX(-110px);
-	}
-}
 @media only screen and (min-width: 0) and (max-width: 464px){
 	.notfound{
-		transform: translateX(-125px);
 		width: 360px;
 		height: 200px;
 	}
@@ -327,7 +349,7 @@ section#contactamesec{
 	.fotoyo{
 	object-fit: scale-down;
 	background: #000;
-	filter: contrast(1.4) grayscale(70%);
+	filter: contrast(1.2);
 
 	min-width: 260px;
 	min-height: 260px;
@@ -343,7 +365,7 @@ section#contactamesec{
 @media only screen and (min-width: 0px) and (max-width: 659px){
  
 	/*SECCION ACERCA DE MI*/
-	section#acercademisec{
+	.contt{
 		display: inline-block;
 		justify-items: center;
 	}
